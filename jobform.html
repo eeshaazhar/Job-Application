@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jobform.js"></script>
+</head>
+<body>
+    <form id="Job" action="#">
+        <fieldset>
+        <legend>Personal Information</legend>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="First Name" value="John">
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="Last Name" value="John"><br>
+            <label for="Phno">Phone Number: </label>
+            <input type="text" id="phno" name="Phone No" value="3313218123">
+            <label for="email">Email Address: </label>
+            <input type="text" id="email" name="Email" value="eeshaazhar.ea@gmail.com"><br>
+            <label for="hno">House no: </label>
+            <input type="text" id="hno" name="House no" value="John">
+            <label for="stno">Street no: </label>
+            <input type="text" id="stno" name="Street no" value="John">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="City" value="John">
+            <label for="state">State: </label>
+            <input type="text" id="state" name="State" value="John">
+            <label for="zip">Zip COde: </label>
+            <input type="text" id="zip" name="Zip Code" value="John">
+        </fieldset>
+        <fieldset>
+            <legend>Resume and Cover Letter</legend>
+            <label for="resume">Upload Resume: </label>
+            <input type="file" id="resume" name="Resume"><br>
+            <label for="coverletter">Cover Letter: </label><br>
+            <textarea name="Coverletter" id="coverletter" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="level">Highest Level of Education: </label>
+            <input type="text" id="level" name="Higest Level of Education" value="John">
+            <label for="school">Name of School: </label>
+            <input type="text" id="school" name="Name of School" value="John">
+            <label for="Major">Major: </label>
+            <input type="text" id="major" name="Major" value="John"><br>
+            <label for="year">Graduation Year: </label>
+            <input type="text" id="year" name="Graduation Year" value="John">
+            <label for="history">Employment History: </label>
+            <input type="text" id="history" name="Employment History" value="John">
+        </fieldset>
+        <fieldset>
+            <legend>Previous Job Title</legend>
+            <label for="company">Company Name: </label>
+            <input type="text" id="company" name="Company Name" value="John">
+            <label for="employment">Employment Dates: </label>
+            <input type="text" id="employment" name="Employment Dates" value="John">
+            <label for="responsibilities">Responsibilities: </label>
+            <input type="text" id="responsibilities" name="Responsibilities" value="John"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Relevant Skills: </label>
+            <input type="text" id="skills" name="Skills" value="John">
+            <label for="certifications">Certifications: </label>
+            <input type="text" id="certifications" name="Certifications" value="John"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="date">Start Date: </label>
+            <input type="date" id="date" name="Dates" >
+            <label for="schedule">Preffered Working Schedule: </label>
+            <input type="text" id="schedule" name="Preffered Working Schedule" value="John"><br>
+            <label for="relocate">Are you willing to relocate? </label>
+            <input type="radio" name="Are you willing to relocate?" id="yes" ">
+            <label for="yes">Yes</label>
+            <input type="radio" name="Relocate" id="no">
+            <label for="no">No</label>   
+        </fieldset>
+        <fieldset>
+            <legend>References</legend>
+            <label for="refname">Reference Name: </label>
+            <input type="text" name="Reference Name" id="refname" value="John">
+            <label for="refcontact">Reference Contact No: </label>
+            <input type="text" name="Reference Contact" id="refcontact" value="3344064050">
+            <label for="relationship">Relationship to Reference: </label>
+            <input type="text" name="Reference to Relationship" id="relationship" value="John">
+        </fieldset>
+        <fieldset>
+            <legend>Additional Questions</legend>
+            <label for="Questions">Why do you want to work for this company? </label><br>
+            <textarea name="Additional questions" id="Questions" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <label for="terms">Do you accept all terms and conditions?</label>
+            <input type="radio" name="Do you accept Terms?" id="agree">
+            <label for="agree">Agree</label>
+            <input type="radio" name="Terms" id="Disagree">
+            <label for="Disagree">Disagree</label> 
+        </fieldset>
+        <input type="submit" value="Submit Application" id="submit" onclick="validation()">
+        
+    </form>
+    <button id="view" onclick="view()">View Application</button>
+
+    <br><br>
+    
+</body>
+</html>
